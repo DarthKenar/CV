@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <script src="../../js/functions.js"></script>
+  </head>
+
+  <body class="bg-[#81B4CD] p-8 ">
+    
+    <!-- HEADER -->
+    <div class="flex md:flex-row md:w-full text-[#DAE1E5]">
+        <header class="md:w-12/12 w-full flex justify-between bg-[#0A3454] rounded-md p-4" id="header">
+            <script>
+                includeHTML('partials-es/header-es.html', 'header'); 
+            </script>
+        </header>
+        <div class="gap-2 md:grid items-center bg-[#1B687B] rounded-md mx-2 hidden ">
+            <a href="../es/index-es.html" class="rounded-lg md:mx-4 m-2 grid items-center"><img class="w-[32px] h-[32px] hover:scale-110 transition-transform duration-300" src="/img/espana.png" alt="bandera españa"></a>
+            <a href="../en/index-en.html" class="rounded-lg md:mx-4 m-2 grid items-center"><img class="w-[32px] h-[32px] hover:scale-110 transition-transform duration-300" src="/img/reino-unido.png" alt="bandera reino unido"></a>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="p-4 font-h3 text-black">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, tortor nec pharetra ultricies, ante erat imperdiet velit, nec laoreet enim lacus a velit.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 mx-auto">
+            <div class="flex md:justify-end justify-center items-center py-10">
+                <div class="group relative max-w-[500px] max-h-[375px] text-center">
+                    <img src="../../img/diploma.png" alt="" class="w-full rounded-md group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-center mt-2">Título Imagen 1</h3>
+                    <p class="text-center text-sm">Descripción imagen 1</p>
+                </div>
+            </div>
+            <div class="flex md:justify-start justify-center items-center py-10">
+                <div class="group relative max-w-[500px] max-h-[375px] text-center">
+                    <img src="../../img/diploma.png" alt="" class="w-full rounded-md group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-center mt-2">Título Imagen 1</h3>
+                    <p class="text-center text-sm">Descripción imagen 1</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center p-4 bg-[#0A3454] text-[#DAE1E5] shadow-md mt-10 rounded-md" id="footer">
+      <script>
+        includeHTML('partials-es/footer-es.html', 'footer');
+      </script>
+    </footer>
+  </body>
+</html>

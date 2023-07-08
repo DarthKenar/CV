@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" id="base">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyectos</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+        <script src="../../js/functions.js"></script>
+    </head>
+    <body class="bg-[#DED29D] p-8 text-[#1C0D02] font-bold font-mono">
+
+        <!-- HEADER -->
+        <header class="bg-[#B3A580] flex rounded-md p-4" id="header">
+            <script>
+                includeHTML('partials-es/header-es.html', 'header');
+            </script>
+        </header>
+
+        <!-- MAIN -->
+        <main class="bg-[#B3A580] flex rounded-md p-4 mt-4 mb-4">
+            <div id="informacion-personal" class="grid grid-cols-2 gap-4 place-content-stretch">
+                <p>Continuamente me esfuerzo por mejorar mis habilidades técnicas e incrementar la eficiencia en cualquier trabajo que haga.</p>
+
+                <p>Aplico patrones de diseño, UML, test cases y flowcharts.</p>
+
+                <p>Soluciono problemas digitales y optimizo tiempos, este ultimo es el objetivo adicional de cada proyecto, trabajo o emprendimiento que tenga.</p>
+
+                <p>Actualmente estoy desarrollando una aplicación web en Django utilizando HTMX.</p>
+
+                <p>La misma, es para gestión de stock y pedidos de un negocio de artículos regionales argentinos; si deseas ver el desarrollo de este proyecto te invito a visitar el siguiente enlace:</p>
+
+                <p><a class="text-[#b7c68b]" href="https://github.com/DarthKenar/ElCanarioRegionales">ElCanarioRegionales</a></p>
+            </div>
+            <!-- Aquí puedes agregar el contenido para las secciones Estudios, Exp. Laboral y Proyectos -->
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="flex bg-[#B3A580] rounded-md p-4" id="footer">
+            <script>
+                includeHTML('partials-es/footer-es.html', 'footer');
+            </script>
+        </footer>
+        
+    </body>
+</html>
