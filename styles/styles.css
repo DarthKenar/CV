@@ -1,16 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
-.font-style-title {font-family:'Source Sans Pro', sans-serif !important;
-}
-.font-style-subtitle {font-family: 'Source Sans Pro', sans-serif !important;
-}
-.font-style-heading {font-family: 'Source Sans Pro', sans-serif !important;
-}
-.font-style-normalText {font-family: 'Source Sans Pro', sans-serif !important;
-}
-@font-face {
-  font-family: 'Poppins';
-  src: url('../styles/fonts/Poppins-Regular.ttf');
-}
 /* fuente para titulos */
 .font-h1{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -21,10 +8,43 @@
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
 }
-/* fuente para los textos */
+/* fuente para los textos (body)*/
 .font-h3{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
 }
+.checkbtn{
+  font-size: 30px;
+  color: #DAE1E5;
+}
 
+@media (max-width: 768px) {
+  ul{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0A3454;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    margin-top: -3rem;
+    z-index: 2;
+  }
+  nav ul li{
+    margin: 25px 0;
+    line-height: 5vh;
+  }
+  nav ul li form{
+    font-size: 15px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  #check:checked ~ #burger {
+    transition: all .5s;
+    animation-delay: 300ms;
+    opacity: 0;
+  }
+}
 
