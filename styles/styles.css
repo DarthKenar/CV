@@ -30,21 +30,58 @@
     margin-top: -3rem;
     z-index: 2;
   }
-  nav ul li{
-    margin: 25px 0;
+  ul div{
+    position: fixed;
+    top: 0;
+    height: 75%;
+    width: calc(100% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: #DAE1E5;
+    
+    z-index: 21;
+  }
+  ul div label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  nav ul div li{
+    margin: 10px 0;
     line-height: 5vh;
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  nav ul li form{
-    font-size: 15px;
+  nav ul div li form{
+    font-size: 18px;
   }
-  #check:checked ~ ul{
+  #check:checked ~ div header nav ul{
     left: 0;
   }
 
-  #check:checked ~ #burger {
+  #check:checked ~ div header nav #burger {
     transition: all .5s;
-    animation-delay: 300ms;
     opacity: 0;
+  }
+  #lenguage-flags{
+    position: fixed;
+    bottom: 0;
+    height: 25%;
+    width: calc(100% - 20px);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #1B687B;
+    left: -100%;
+    transition: .5s;
+    z-index: 3;
+  }
+  #check:checked ~ div #lenguage-flags{
+    left: 0;
   }
 }
 
