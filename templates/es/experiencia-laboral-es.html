@@ -1,187 +1,104 @@
 <!DOCTYPE html>
-<html lang="es" id="base">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Experiencia Laboral</title>
-        <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
-        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
-        <script src="../../js/functions.js"></script>
-    </head>
-    <body class="bg-[#DED29D] p-8 text-[#1C0D02] font-bold font-mono">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiencia Laboral</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <script src="../../js/functions.js"></script>
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
 
-        <!-- HEADER -->
-        <header class="bg-[#B3A580] flex rounded-md p-4" id="header">
+  <body class="bg-[#81B4CD] p-8">
+    <input type="checkbox" id="check" class="cursor-pointer border-2 border-red-500 bg-red-500 hidden"> 
+
+    <!-- HEADER -->   
+    <div class="flex md:flex-row md:w-full text-[#DAE1E5]">
+        <header class="md:w-12/12 w-full flex justify-between bg-[#0A3454] rounded-md p-4" id="header">
             <script>
-                includeHTML('partials-es/header-es.html', 'header');
+                includeHTML('./partials-es/header-es.html', 'header');
             </script>
         </header>
+        <div class="md:gap-2 md:grid md:items-center bg-[#1B687B] rounded-md md:mx-4 justify-between" id="lenguage-flags"> 
+            <a href="../es/experiencia-laboral-es.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/espania.png" alt="bandera españa"></a>
+            <a href="../en/experiencia-laboral-en.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/inglaterra.png" alt="bandera reino unido"></a>
+        </div>
+    </div>
 
-        <!-- MAIN -->
-        <main class="bg-[#B3A580] flex rounded-md p-4 mt-4 mb-4">
-          <div class="grid grid-cols-2 gap-4 place-content-stretch">
-              <p><b>(icono drogería Hidalgo hnos) Drogería Hidalgo Hnos:</b> junio 2022 - marzo 2023 (10 meses)</p>
-              <p><b>(icono de zerpens) Zerpens:</b> junio 2022 - marzo 2023 (10 meses)</p>
-              <p><b>(icono DGE) Direccion General de Escuelas:</b> junio 2022 - marzo 2023 (10 meses)</p>
-              <p><b>Edad:</b>28 años</p>
-              <p><b>Nacionalidad:</b> Argentino, Italiano</p>
-              <p><b>Residencia:</b> Argentina, Mendoza</p>
+    <!-- MAIN -->
+    <main class="p-4 text-[#141414]">
+
+
+      <h2 class="font-h2 text-center my-10 text-4xl">EXPERIENCIA LABORAL</h2>      
+      
+      <!-- BLOQUE A EDITAR -->
+
+
+      <div class="bg-[#1B687B] rounded-md md:p-5 mx-[5%] md:mx-[8%] text-[#DAE1E5]"> 
+        <div class="p-2">
+          <!-- imagen de la empresa alineada hacia la izquierda -->
+          <a href="https://zerpens.com/" target="_blank">
+            <img src="/img/logozerpensbyr.png" alt="Zerpens"> 
+          </a>
+          <!-- Nombre de la empresa -->
+        </div>
+        <div class="md:flex">
+          <!-- Descripcion del puesto, texto alineado a la izq -->
+          <div class="p-2">
+            <p>Dessarrollo web usando CMS wordpress, retocando estilos en css y reestructurando secciones con html. Encargado de soporte (presencial y remoto), redireccionamiento de dominios por dns, instalacion de certificados ssl, cloudflare, configuracion de bases de datos y colaboración con el mantenimiento de los servidores.</p>
           </div>
-            <!-- Aquí puedes agregar el contenido para las secciones Estudios, Exp. Laboral y Proyectos -->
-          <div
-            id="carouselExampleCaptions"
-            class="relative"
-            data-te-carousel-init
-            data-te-carousel-slide>
-            <div
-              class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-              data-te-carousel-indicators>
-              <button
-                type="button"
-                data-te-target="#carouselExampleCaptions"
-                data-te-slide-to="0"
-                data-te-carousel-active
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-current="true"
-                aria-label="Slide 1"></button>
-              <button
-                type="button"
-                data-te-target="#carouselExampleCaptions"
-                data-te-slide-to="1"
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-label="Slide 2"></button>
-              <button
-                type="button"
-                data-te-target="#carouselExampleCaptions"
-                data-te-slide-to="2"
-                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                aria-label="Slide 3"></button>
-            </div>
-            <div
-              class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-              <div
-                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-active
-                data-te-carousel-item
-                style="backface-visibility: hidden">
-                <div
-                  class="relative overflow-hidden bg-cover bg-no-repeat"
-                  style="background-position: 50%">
-                  <img
-                    src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(123).jpg"
-                    class="block w-full" />
-                  <div
-                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
+          <!-- Subtitulo y tecnologías -->
+          <!-- dividido en dos secciones, el interior debe estar en la mitad o 2/3 del lado derecho -->
+          <div class="flex flex-col items-end bg-[#0A3454] rounded-md p-1 sm:p-2 md:p-4 m-1 sm:m-2 md:m-0">
+            <!-- Tecnologías alineado hacia la izquierda dentro de esa mitad del lado derecho -->
+            <div class="border-2 border-violet-500">
+              <p class="border-2 border-red-600 text-start">Tecnologías:</p>
+              <div class="border-2 border-blue-600 items-end flex pt-2">
+                <!-- Logos de tecnologías usadas en el trabajo -->
+                <!-- alineado hacia la izquierda -->
+                <div class="pr-2">
+                  <img src="/img/wordpress2.png" alt="Wordpress" class="w-[32px] h-[32px] md:w-[48px] md:h-[48px] lg:w-[64px] lg:h-[64px] min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] lg:min-w-[64px] lg:min-h-[64px]">
                 </div>
-                <div
-                  class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                  <h5 class="text-xl">First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
+                <div class="pr-2">
+                  <img src="/img/WordPress.png" alt="Wordpress" class="w-[32px] h-[32px] md:w-[48px] md:h-[48px] lg:w-[64px] lg:h-[64px] min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] lg:min-w-[64px] lg:min-h-[64px]">
                 </div>
-              </div>
-              <div
-                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item
-                style="backface-visibility: hidden">
-                <div
-                  class="relative overflow-hidden bg-cover bg-no-repeat"
-                  style="background-position: 50%">
-                  <img
-                    src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(124).jpg"
-                    class="block w-full" />
-                  <div
-                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
-                </div>
-                <div
-                  class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                  <h5 class="text-xl">Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second slide.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                data-te-carousel-item
-                style="backface-visibility: hidden">
-                <div
-                  class="relative overflow-hidden bg-cover bg-no-repeat"
-                  style="background-position: 50%">
-                  <img
-                    src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(125).jpg"
-                    class="block w-full" />
-                  <div
-                    class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
-                </div>
-                <div
-                  class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-                  <h5 class="text-xl">Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
+                <div class="pr-2">
+                  <img src="/img/WordPress.png" alt="Wordpress" class="w-[32px] h-[32px] md:w-[48px] md:h-[48px] lg:w-[64px] lg:h-[64px] min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] lg:min-w-[64px] lg:min-h-[64px]">
                 </div>
               </div>
             </div>
-            <button
-              class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-              type="button"
-              data-te-target="#carouselExampleCaptions"
-              data-te-slide="prev">
-              <span class="inline-block h-8 w-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-              </span>
-              <span
-                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                >Previous</span
-              >
-            </button>
-            <button
-              class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-              type="button"
-              data-te-target="#carouselExampleCaptions"
-              data-te-slide="next">
-              <span class="inline-block h-8 w-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-              </span>
-              <span
-                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                >Next</span
-              >
-            </button>
           </div>
-        </main>
+        </div>
         
-        <!-- FOOTER -->
-        <footer class="flex bg-[#B3A580] rounded-md p-4" id="footer">
-            <script>
-                includeHTML('partials-es/footer-es.html', 'footer');
-            </script>
-        </footer>
-        
-    </body>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 mx-auto">
+          <div class="flex md:justify-end justify-center items-center py-10">
+              <div class="group relative max-w-[500px] max-h-[375px] text-center">
+                  <img src="../../img/diploma.png" alt="" class="w-full rounded-md group-hover:scale-105 transition-transform duration-300">
+                  <h3 class="text-center mt-2">Título Imagen 1</h3>
+                  <p class="text-center text-sm">Descripción imagen 1</p>
+              </div>
+          </div>
+          <div class="flex md:justify-start justify-center items-center py-10">
+              <div class="group relative max-w-[500px] max-h-[375px] text-center">
+                  <img src="../../img/diploma.png" alt="" class="w-full rounded-md group-hover:scale-105 transition-transform duration-300">
+                  <h3 class="text-center mt-2">Título Imagen 1</h3>
+                  <p class="text-center text-sm">Descripción imagen 1</p>
+              </div>
+          </div>
+      </div>
+  </main>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center p-4 bg-[#0A3454] text-[#DAE1E5] shadow-md mt-10 rounded-md" id="footer">
+      <script>
+        includeHTML('partials-es/footer-es.html', 'footer');
+      </script>
+    </footer>
+  </body>
 </html>

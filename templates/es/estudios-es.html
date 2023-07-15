@@ -1,96 +1,107 @@
 <!DOCTYPE html>
-<html lang="es" id="base">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Estudios</title>
-        <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
-        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
-        <script src="../../js/functions.js"></script>
-    </head>
-    <body class="bg-[#DED29D] p-8 text-[#1C0D02] font-bold font-mono">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudios</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <script src="../../js/functions.js"></script>
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
 
-        <!-- HEADER -->
-        <header class="bg-[#B3A580] flex rounded-md p-4" id="header">
+  <body class="bg-[#81B4CD] p-8">
+    <input type="checkbox" id="check" class="cursor-pointer border-2 border-red-500 bg-red-500 hidden"> 
+
+    <!-- HEADER -->   
+    <div class="flex md:flex-row md:w-full text-[#DAE1E5]">
+        <header class="md:w-12/12 w-full flex justify-between bg-[#0A3454] rounded-md p-4" id="header">
             <script>
-                includeHTML('partials-es/header-es.html', 'header');
+                includeHTML('./partials-es/header-es.html', 'header');
             </script>
         </header>
-        
-        <!-- MAIN -->
-        <main class="bg-[#B3A580] flex rounded-md p-4 mt-4 mb-4">
-            <div class="grid grid-cols-2 gap-4 place-content-stretch">
-                Analista y Programador Superior en Sistemas (Mar - 2014 / Dic - 2017).
-                Técnico Superior en Computación y Redes (Feb - 2015 / Dic - 2018).
-                Técnico Superior en Telecomunicaciones (Mar - 2016 / Dic - 2019).
-                <p><b>(icono drogería Hidalgo hnos) Drogería Hidalgo Hnos:</b> junio 2022 - marzo 2023 (10 meses)</p>
-                <p><b>(icono de zerpens) Zerpens:</b> junio 2022 - marzo 2023 (10 meses)</p>
-                <p><b>(icono DGE) Direccion General de Escuelas:</b> junio 2022 - marzo 2023 (10 meses)</p>
-                <p><b>Edad:</b>28 años</p>
-                <p><b>Nacionalidad:</b> Argentino, Italiano</p>
-                <p><b>Residencia:</b> Argentina, Mendoza</p>
-            </div>
-            <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
-                <div class="-m-1 flex flex-wrap md:-m-2">
-                    <div class="flex w-1/3 flex-wrap">
-                        <div class="w-full p-1 md:p-2">
-                            <img
-                                alt="gallery"
-                                class="block h-full w-full rounded-lg object-cover object-center"
-                                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
-                        </div>
-                    </div>
-                    <div class="flex w-1/3 flex-wrap">
-                        <div class="w-full p-1 md:p-2">
-                            <img
-                            alt="gallery"
-                            class="block h-full w-full rounded-lg object-cover object-center"
-                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
-                        </div>
-                    </div>
-                    <div class="flex w-1/3 flex-wrap">
-                        <div class="w-full p-1 md:p-2">
-                            <img
-                            alt="gallery"
-                            class="block h-full w-full rounded-lg object-cover object-center"
-                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
-                        </div>
-                    </div>
-                    <div class="flex w-1/3 flex-wrap">
-                        <div class="w-full p-1 md:p-2">
-                            <img
-                            alt="gallery"
-                            class="block h-full w-full rounded-lg object-cover object-center"
-                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
-                        </div>
-                    </div>
-                    <div class="flex w-1/3 flex-wrap">
-                        <div class="w-full p-1 md:p-2">
-                            <img
-                            alt="gallery"
-                            class="block h-full w-full rounded-lg object-cover object-center"
-                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp" />
-                        </div>
-                    </div>
-                    <div class="flex w-1/3 flex-wrap">
-                        <div class="w-full p-1 md:p-2">
-                            <img
-                            alt="gallery"
-                            class="block h-full w-full rounded-lg object-cover object-center"
-                            src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
-                        </div>
-                    </div>
+        <div class="md:gap-2 md:grid md:items-center bg-[#1B687B] rounded-md md:mx-4 justify-between" id="lenguage-flags"> 
+            <a href="../es/estudios-es.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/espania.png" alt="bandera españa"></a>
+            <a href="../en/estudios-en.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/inglaterra.png" alt="bandera reino unido"></a>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="p-4 text-[#141414]">
+        <h2 class="font-h2 text-center my-10 text-4xl">ESTUDIOS</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, tortor nec pharetra ultricies, ante erat imperdiet velit, nec laoreet enim lacus a velit.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 mx-auto">
+            <div class="flex md:justify-end justify-center items-center py-10">
+                <div class="group relative max-w-[500px] max-h-[375px] text-center">
+                    <img src="../../img/diploma.png" alt="" class="w-full rounded-md group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-center mt-2">Título Imagen 1</h3>
+                    <p class="text-center text-sm">Descripción imagen 1</p>
                 </div>
             </div>
-        </main>
-        
-        <!-- FOOTER -->
-        <footer class="flex bg-[#B3A580] rounded-md p-4" id="footer">
-            <script>
-                includeHTML('partials-es/footer-es.html', 'footer');
-            </script>
-        </footer>
-        
-    </body>
+            <div class="flex md:justify-start justify-center items-center py-10">
+                <div class="group relative max-w-[500px] max-h-[375px] text-center">
+                    <img src="../../img/diploma.png" alt="" class="w-full rounded-md group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-center mt-2">Título Imagen 1</h3>
+                    <p class="text-center text-sm">Descripción imagen 1</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="font-h2 text-center my-10 text-4xl">TECNOLOGÍAS</h2>
+        <div class="grid grid-cols-3">
+            <div></div>
+            <div class="grid grid-cols-4 border-2">
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href=""><img class="hover:scale-105 transition-transform duration-300" src="/img/Django.png" alt="Django"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href=""><img class="hover:scale-105 transition-transform duration-300" src="/img/git.png" alt="Git"></a>
+                </div>
+                <div class="flex items-center w-[128px] h-[64px] sm:w-[48px] sm:h-[48px] md:w-[128px] md:h-[64px] m-1 border-2 border-red-500">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/htmx.png" alt="HTMX"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/JavaScript.png" alt="JavaScript"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/LeetCode.png" alt="LeetCode"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/MySQL.png" alt="MySQL"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[128px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/PDM.png" alt="PDM"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/PostgreSQL.png" alt="PostgreSQL"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/Python.png" alt="Python"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/SQL.png" alt="SQL"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/TailwindCSS.png" alt="TailwindCSS"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/WordPress.png" alt="WordPress"></a>
+                </div>
+                <div class="w-[32px] h-[32px] sm:w-[48px] sm:h-[48px] md:w-[64px] md:h-[64px] m-1">
+                    <a href="" ><img class="hover:scale-105 transition-transform duration-300" src="/img/youtube.png" alt="youtube"></a>
+                </div>
+          </div> 
+            <div></div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center p-4 bg-[#0A3454] text-[#DAE1E5] shadow-md mt-10 rounded-md" id="footer">
+      <script>
+        includeHTML('partials-es/footer-es.html', 'footer');
+      </script>
+    </footer>
+  </body>
 </html>

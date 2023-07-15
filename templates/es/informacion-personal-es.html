@@ -1,41 +1,66 @@
 <!DOCTYPE html>
-<html lang="es" id="base">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Información Personal</title>
-        <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
-        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
-        <script src="../../js/functions.js"></script>
-    </head>
-    <body class="bg-[#DED29D] p-8 text-[#1C0D02] font-bold font-mono">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informacion Personal</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <script src="../../js/functions.js"></script>
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
 
-        <!-- HEADER -->
-        <header class="bg-[#B3A580] flex rounded-md p-4" id="header">
+  <body class="bg-[#81B4CD] p-8">
+    <input type="checkbox" id="check" class="cursor-pointer border-2 border-red-500 bg-red-500 hidden"> 
+
+    <!-- HEADER -->   
+    <div class="flex md:flex-row md:w-full text-[#DAE1E5]">
+        <header class="md:w-12/12 w-full flex justify-between bg-[#0A3454] rounded-md p-4" id="header">
             <script>
-                includeHTML('partials-es/header-es.html', 'header');
+                includeHTML('./partials-es/header-es.html', 'header');
             </script>
         </header>
+        <div class="md:gap-2 md:grid md:items-center bg-[#1B687B] rounded-md md:mx-4 justify-between" id="lenguage-flags"> 
+            <a href="../es/informacion-personal-es.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/espania.png" alt="bandera españa"></a>
+            <a href="../en/informacion-personal-en.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/inglaterra.png" alt="bandera reino unido"></a>
+        </div>
+    </div>
 
-        <!-- MAIN -->
-        <main class="bg-[#B3A580] flex rounded-md p-4 mt-4 mb-4">
-            <div class="grid grid-cols-2 gap-4 place-content-stretch">
-                <p><b>Nombre:</b> Federico Juan</p>
-                <p><b>Apellidos:</b> Vega, Bianchetti</p>
-                <p><b>Edad:</b>28 años</p>
-                <p><b>Nacionalidad:</b> Argentino, Italiano</p>
-                <p><b>Residencia:</b> Argentina, Mendoza</p>
+    <!-- MAIN -->
+    <main class="p-4 text-[#141414] font-h3">
+        <h2 class="font-h2 text-center md:my-0 text-4xl md:py-10">INFORMACION PERSONAL</h2>
+        <div class="text-lg text-[#141414] md:px-20 "> 
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 mx-auto">
+            <div class="flex md:justify-center justify-start items-start sm:py-10 md:py-5">
+                <div class="group relative max-w-[500px] max-h-[375px] text-left">
+                  <p class="py-1 sm:py-2 md:py-5">Fecha de nacimiento: 22/03/1995</p>
+                  <p class="py-1 sm:py-2 md:py-5">Edad: 28 años</p>
+                  <p class="py-1 sm:py-2 md:py-5">Localidad: Argentina</p>
+                  <p class="py-1 sm:py-2 md:py-5">Nacionalidad: Argentino - Italiano</p>
+                </div>
             </div>
-            <!-- Aquí puedes agregar el contenido para las secciones Estudios, Exp. Laboral y Proyectos -->
-        </main>
-        
-        <!-- FOOTER -->
-        <footer class="flex bg-[#B3A580] rounded-md p-4" id="footer">
-            <script>
-                includeHTML('partials-es/footer-es.html', 'footer');
-            </script>
-        </footer>
-        
-    </body>
+            <div class="flex md:justify-center justify-center py-10">
+                <div class="group relative max-w-[500px] max-h-[375px] text-right">
+                  <form action="https://drive.google.com/file/d/1fC30WNFxT1jt_mbd7fzN57qwvvsaPZ6G/view?usp=drive_link" class="flex items-center md:items-start w-full">
+                    <button class="bg-[#4aa0b8] rounded-md p-2 xl:text-base w-full md:mt-1 m-1 hover:scale-105 transition-transform duration-300" type="text">
+                      <ion-icon name="cloud-download-outline" class="min-w-[32px] min-h-[32px] cursor-pointer">
+                    </ion-icon>
+                    <p>Descargar CV</p>
+                  </button>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center p-4 bg-[#0A3454] text-[#DAE1E5] shadow-md mt-10 rounded-md" id="footer">
+      <script>
+        includeHTML('partials-es/footer-es.html', 'footer');
+      </script>
+    </footer>
+  </body>
 </html>

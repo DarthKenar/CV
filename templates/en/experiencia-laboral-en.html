@@ -1,39 +1,104 @@
 <!DOCTYPE html>
-<html lang="es" id="base">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Federico Vega</title>
-        <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
-        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
-        <script src="../../js/functions.js"></script>
-    </head>
-    <body class="bg-[#DED29D] p-8 text-[#1C0D02] font-bold font-mono">
-        
-        <header class="bg-[#B3A580] flex rounded-md p-4" id="header">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiencia Laboral</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <script src="../../js/functions.js"></script>
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+
+  <body class="bg-[#81B4CD] p-8">
+    <input type="checkbox" id="check" class="cursor-pointer border-2 border-red-500 bg-red-500 hidden"> 
+
+    <!-- HEADER -->   
+    <div class="flex md:flex-row md:w-full text-[#DAE1E5]">
+        <header class="md:w-12/12 w-full flex justify-between bg-[#0A3454] rounded-md p-4" id="header">
             <script>
-                includeHTML('partials-en/footer-en.html', 'footer');
+                includeHTML('./partials-en/header-en.html', 'header');
             </script>
         </header>
-        <main class="bg-[#B3A580] flex rounded-md p-4 mt-4 mb-4">
-            <div class="grid grid-cols-2 gap-4 place-content-stretch">
-                <p><b>(icono drogería Hidalgo hnos) Drogería Hidalgo Hnos:</b> junio 2022 - marzo 2023 (10 meses)</p>
-                <p><b>(icono de zerpens) Zerpens:</b> junio 2022 - marzo 2023 (10 meses)</p>
-                <p><b>(icono DGE) Direccion General de Escuelas:</b> junio 2022 - marzo 2023 (10 meses)</p>
-                <p><b>Edad:</b>28 años</p>
-                <p><b>Nacionalidad:</b> Argentino, Italiano</p>
-                <p><b>Residencia:</b> Argentina, Mendoza</p>
+        <div class="md:gap-2 md:grid md:items-center bg-[#1B687B] rounded-md md:mx-4 justify-between" id="lenguage-flags"> 
+            <a href="../es/experiencia-laboral-es.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/espania.png" alt="bandera españa"></a>
+            <a href="../en/experiencia-laboral-en.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/inglaterra.png" alt="bandera reino unido"></a>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="p-4 text-[#141414]">
+
+
+      <h2 class="font-h2 text-center my-10 text-4xl">WORK EXPERIENCE</h2>      
+      
+      <!-- BLOQUE A EDITAR -->
+
+
+      <div class="bg-[#1B687B] rounded-md md:p-5 mx-[5%] md:mx-[8%] text-[#DAE1E5]"> 
+        <div class="p-2">
+          <!-- imagen de la empresa alineada hacia la izquierda -->
+          <a href="https://zerpens.com/" target="_blank">
+            <img src="/img/logozerpensbyr.png" alt="Zerpens"> 
+          </a>
+          <!-- Nombre de la empresa -->
+        </div>
+        <div class="md:flex">
+          <!-- Descripcion del puesto, texto alineado a la izq -->
+          <div class="p-2">
+            <p>Web development using CMS wordpress, retouching styles in css and restructuring sections with html. In charge of support (in person and remote), domain redirection by dns, ssl certificates installation, cloudflare, database configuration and collaboration with server maintenance.</p>
+          </div>
+          <!-- Subtitulo y tecnologías -->
+          <!-- dividido en dos secciones, el interior debe estar en la mitad o 2/3 del lado derecho -->
+          <div class="flex flex-col items-end bg-[#0A3454] rounded-md p-1 sm:p-2 md:p-4 m-1 sm:m-2 md:m-0">
+            <!-- Tecnologías alineado hacia la izquierda dentro de esa mitad del lado derecho -->
+            <div class="border-2 border-violet-500">
+              <p class="border-2 border-red-600 text-start">Technologies:</p>
+              <div class="border-2 border-blue-600 items-end flex pt-2">
+                <!-- Logos de tecnologías usadas en el trabajo -->
+                <!-- alineado hacia la izquierda -->
+                <div class="pr-2">
+                  <img src="/img/wordpress2.png" alt="Wordpress" class="w-[32px] h-[32px] md:w-[48px] md:h-[48px] lg:w-[64px] lg:h-[64px] min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] lg:min-w-[64px] lg:min-h-[64px]">
+                </div>
+                <div class="pr-2">
+                  <img src="/img/WordPress.png" alt="Wordpress" class="w-[32px] h-[32px] md:w-[48px] md:h-[48px] lg:w-[64px] lg:h-[64px] min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] lg:min-w-[64px] lg:min-h-[64px]">
+                </div>
+                <div class="pr-2">
+                  <img src="/img/WordPress.png" alt="Wordpress" class="w-[32px] h-[32px] md:w-[48px] md:h-[48px] lg:w-[64px] lg:h-[64px] min-w-[32px] min-h-[32px] md:min-w-[48px] md:min-h-[48px] lg:min-w-[64px] lg:min-h-[64px]">
+                </div>
+              </div>
             </div>
-            <!-- Aquí puedes agregar el contenido para las secciones Estudios, Exp. Laboral y Proyectos -->
-            
-        </main>
+          </div>
+        </div>
         
-        <!-- FOOTER -->
-        <footer class="flex bg-[#B3A580] rounded-md p-4" id="footer">
-            <script>
-                includeHTML('partials-en/footer-en.html', 'footer');
-            </script>
-        </footer>
-    </body>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 mx-auto">
+          <div class="flex md:justify-end justify-center items-center py-10">
+              <div class="group relative max-w-[500px] max-h-[375px] text-center">
+                  <img src="../../img/diploma.png" alt="" class="w-full rounded-md group-hover:scale-105 transition-transform duration-300">
+                  <h3 class="text-center mt-2">Título Imagen 1</h3>
+                  <p class="text-center text-sm">Descripción imagen 1</p>
+              </div>
+          </div>
+          <div class="flex md:justify-start justify-center items-center py-10">
+              <div class="group relative max-w-[500px] max-h-[375px] text-center">
+                  <img src="../../img/diploma.png" alt="" class="w-full rounded-md group-hover:scale-105 transition-transform duration-300">
+                  <h3 class="text-center mt-2">Título Imagen 1</h3>
+                  <p class="text-center text-sm">Descripción imagen 1</p>
+              </div>
+          </div>
+      </div>
+  </main>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center p-4 bg-[#0A3454] text-[#DAE1E5] shadow-md mt-10 rounded-md" id="footer">
+      <script>
+        includeHTML('partials-en/footer-en.html', 'footer');
+      </script>
+    </footer>
+  </body>
 </html>

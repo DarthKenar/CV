@@ -1,55 +1,52 @@
 <!DOCTYPE html>
-<html lang="es" id="base">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Federico Vega</title>
-        <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
-        <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
-        <script src="../../js/functions.js"></script>
-    </head>
-    <body class="bg-[#DED29D] p-8 text-[#1C0D02] font-bold font-mono">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <script src="../../js/functions.js"></script>
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
 
-        <!-- HEADER -->
-        <div class="flex content-center">
-            <header class="flex bg-[#B3A580] rounded-md p-4" id="header">
-                <script>
-                    includeHTML('partials-en/header-en.html', 'header');
-                </script>
-            </header>
-            <div class="flex bg-[#B3A580] rounded-md mx-4">
-                <div class="ml-auto">
-                    <a href="../es/index-es.html"><img class="rounded-full p-4 w-[64px] h-[64px]" src="/img/espana.png" alt="bandera españa"></a>
-                    <a href="../en/index-en.html"><img class="rounded-full p-4 w-[64px] h-[64px]"  src="/img/reino-unido.png" alt="bandera reino unido"></a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- MAIN -->
-        <main>
-            <div id="informacion-personal">
-                <p>Continuamente me esfuerzo por mejorar mis habilidades técnicas e incrementar la eficiencia en cualquier trabajo que haga.</p>
+  <body class="bg-[#81B4CD] p-8">
+    <input type="checkbox" id="check" class="cursor-pointer border-2 border-red-500 bg-red-500 hidden"> 
 
-                <p>Aplico patrones de diseño, UML, test cases y flowcharts.</p>
-
-                <p>Soluciono problemas digitales y optimizo tiempos, este ultimo es el objetivo adicional de cada proyecto, trabajo o emprendimiento que tenga.</p>
-
-                <p>Actualmente estoy desarrollando una aplicación web en Django utilizando HTMX.</p>
-
-                <p>La misma, es para gestión de stock y pedidos de un negocio de artículos regionales argentinos; si deseas ver el desarrollo de este proyecto te invito a visitar el siguiente enlace:</p>
-
-                <p><a class="text-[#b7c68b]" href="https://github.com/DarthKenar/ElCanarioRegionales">ElCanarioRegionales</a></p>
-            </div>
-            <!-- Aquí puedes agregar el contenido para las secciones Estudios, Exp. Laboral y Proyectos -->
-        </main>
-        
-        <!-- FOOTER -->
-        <footer class="flex bg-[#B3A580] rounded-md p-4" id="footer">
+    <!-- HEADER -->   
+    <div class="flex md:flex-row md:w-full text-[#DAE1E5]">
+        <header class="md:w-12/12 w-full flex justify-between bg-[#0A3454] rounded-md p-4" id="header">
             <script>
-                includeHTML('partials-en/footer-en.html', 'footer');
+                includeHTML('./partials-en/header-en.html', 'header'); 
             </script>
-        </footer>
+        </header>
+        <div class="md:gap-2 md:grid md:items-center bg-[#1B687B] rounded-md md:mx-4 justify-between" id="lenguage-flags"> 
+            <a href="../es/index-es.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/espania.png" alt="bandera españa"></a>
+            <a href="../en/index-en.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/inglaterra.png" alt="bandera reino unido"></a>
+        </div>
+    </div>
 
-    </body>
+    <!-- MAIN -->
+    <main class="p-4 text-[#141414] font-h3">
+        <div class="text-lg text-[#141414] md:px-20 md:pt-10"> 
+          <p>Thanks for visiting my portfolio, I'm Federico Vega, Systems Analyst and backend programmer with little experience and a lot of versatility.</p>
+          <br>
+          <p>I am a music lover and although in my family we have a very marked artistic vein, I am passionate about backend development because it allows me to create solutions for systems and feel that great satisfaction of having fulfilled the goal.</p>
+          <br>
+          <p>I am fascinated by the logic and solutions that can be created with backend development, and I am currently looking for new challenges and opportunities to expand my knowledge.</p>
+          <p>If you can give me that, I promise to give it my all!</p>
+          <br>
+          <p>Finally, I invite you to explore my portfolio and see some of the projects I have worked on. If you are interested in my profile, I will be happy to talk to you.</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center p-4 bg-[#0A3454] text-[#DAE1E5] shadow-md mt-10 rounded-md" id="footer">
+      <script>
+        includeHTML('templates/en/partials-en/footer-en.html', 'footer');
+      </script>
+    </footer>
+  </body>
 </html>
