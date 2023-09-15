@@ -32,6 +32,7 @@
 .zoom-in:hover {
   transform: scale(105%);
 }
+@media (max-width:100px){}
 
 @media (max-width: 768px) {
   ul{

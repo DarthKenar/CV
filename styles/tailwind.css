@@ -1644,7 +1644,6 @@ video {
     color: rgb(234 88 12 / var(--tw-text-opacity));
   }
 }
-
 @media (min-width: 1280px) {
   .xl\:w-full {
     width: 100%;
