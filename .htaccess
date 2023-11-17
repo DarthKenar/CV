@@ -1,0 +1,10 @@
+
+
+
+DirectoryIndex inicio.html index.htm index-en.html index.php
+
+# HTID:22008879: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:22008879:
+
+Errordocument 404 /404.html

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo</title>
+    <link rel="stylesheet" type="text/css" href="styles/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="js/functions.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+
+  <body class="bg-[#81B4CD] p-8">
+    <input type="checkbox" id="check" class="cursor-pointer border-2 border-red-500 bg-red-500 hidden"> 
+
+    <!-- HEADER -->   
+    <div class="flex md:flex-row md:w-full text-[#DAE1E5]">
+        <header class="md:w-12/12 w-full flex justify-between bg-[#0A3454] rounded-md p-4" id="header">
+            <script>
+                includeHTML('header-en.html', 'header'); 
+            </script>
+        </header>
+        <div class="md:gap-2 md:grid md:items-center bg-[#1B687B] rounded-md md:mx-4 justify-between" id="lenguage-flags"> 
+            <a href="index-es.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/espania.webp" alt="bandera españa"></a>
+            <a href="index-en.html" class="rounded-lg md:mx-4 grid items-center"><img class="mx-8 w-[72px] h-[48px] md:mx-0 md:w-[48px] md:h-[28px] hover:scale-110 transition-transform duration-300" src="/img/inglaterra.webp" alt="bandera reino unido"></a>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="p-4 text-[#141414] font-h3">
+      <div class="text-lg text-[#141414] md:px-20 md:pt-10">
+        <p>Music lover and backend programmer.</p>
+        <br>
+        <p>In the latter, I apply design patterns, UML, unit tests and model diagrams.</p>
+        <br>
+        <p>I am currently developing a web application in Django using HTMX. It is for stock and order management of a regional argentinian articles business; if you want to see the development of this project, I invite you to see it in <a href="https://github.com/DarthKenar/ElCanarioRegionales" class="text-[#0A3454]">github</a></p><br>
+        <p>I am looking for new challenges and opportunities, and therefore, to join a company that allows me to add knowledge, where the work environment is calm, cooperative and productive.</p>
+        <br>
+        <p>I invite you to explore my portfolio and see some of the <a href="proyectos-es.html" class="text-[#0A3454]">proyects</a> i have worked on.</p>
+        <br>
+        <p>If you are interested in my profile, I will be happy to talk to you.</p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center p-4 bg-[#0A3454] text-[#DAE1E5] shadow-md mt-10 rounded-md" id="footer">
+      <script>
+        includeHTML('footer-en.html', 'footer');
+      </script>
+    </footer>
+  </body>
+</html>
