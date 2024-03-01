@@ -339,11 +339,5 @@
   }
 
   footer .phrase {
-    display: flex;
-    flex-direction: column;
     margin: 2rem;
-  }
-
-  footer .phrase h4 {
-    right: 0%;
   }
