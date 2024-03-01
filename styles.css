@@ -337,3 +337,13 @@
     top: 50%; /* Mueve el elemento hacia abajo un 50% de la altura del contenedor */
     transform: translateY(22%);
   }
+
+  footer .phrase {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  footer .phrase h4 {
+    right: 0%;
+  }
