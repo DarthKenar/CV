@@ -332,7 +332,7 @@
     }
   }
 
-  a svg {
+  svg {
     position: relative; /* Necesario para usar 'top' */
     top: 50%; /* Mueve el elemento hacia abajo un 50% de la altura del contenedor */
     transform: translateY(22%);
