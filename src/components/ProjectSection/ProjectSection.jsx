@@ -1,15 +1,28 @@
+import ProjectDescription from "./Project/ProjectDescription/ProjectDescription"
 import Project from "./Project/Project"
 export default function ProjectSection(){
   return(
     <section id="projects" className="projects-section">
       <h2 className="projects-section-header">Proyectos</h2>
       <div className="projects-grid">
-        <Project name="VidelaSpect" image="videlaspect.jpg" link="#"/>
-        <Project name="Pomodoro Neumorphism" image="pomodoroneumorphism.webp" link="https://darthkenar.github.io/PomodoroNeumorphism/"/>
-        <Project name="El Canario Regionales" image="elCanarioRegionales.webp" link="http://federicovega.pythonanywhere.com/"/>
-        <Project name="El Canario Matemático" image="elCanarioMatematico.png" link="#"/>
-        <Project name="Word Learn Spanish" image="wordlearnspanish.webp" link="https://github.com/DarthKenar/WordlearnSpanish"/>
-        <Project name="Mecalógica" image="mecalogica.jfif" link="#"/>
+        <Project name="VidelaSpect" image="videlaspect.jpg" link="#">
+          <ProjectDescription title="Videla Spect" goal="Registrar la entrada y salida del personal docente de la escuela Ing. Ricardo Videla n°4012." details="Al sistema se le implementó verificación de rostro humano por inteligencia artificial. Panel de administrador. Envío de resumen de registros por correo electrónico. Eliminación automática opcional de registros y mucho más." technologies="Typescript, Javascript, Node, Express.js, " deployment="asdasd" repository="asdasd"/>
+        </Project>
+        <Project name="Pomodoro Neumorphism" image="pomodoroneumorphism.webp" link="https://darthkenar.github.io/PomodoroNeumorphism/">
+          <ProjectDescription/>
+        </Project>
+        <Project name="El Canario Regionales" image="elCanarioRegionales.webp" link="http://federicovega.pythonanywhere.com/">
+          <ProjectDescription/>
+        </Project>
+        <Project name="El Canario Matemático" image="elCanarioMatematico.png" link="#">
+          <ProjectDescription/>
+        </Project>
+        <Project name="Word Learn Spanish" image="wordlearnspanish.webp" link="https://github.com/DarthKenar/WordlearnSpanish">
+          <ProjectDescription/>
+        </Project>
+        <Project name="Mecalógica" image="mecalogica.jfif" link="#">
+          <ProjectDescription/>
+        </Project>
       </div>
       <a
         href="https://github.com/DarthKenar?tab=repositories"

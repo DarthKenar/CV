@@ -1,5 +1,5 @@
 import "./Project.css"
-export default function Project({name, image, link}){
+export default function Project({children, name, image, link}){
   return(
     <a
       href={link}
@@ -8,7 +8,7 @@ export default function Project({name, image, link}){
       rel="noopener noreferrer"
     >
       <p className="project-description">
-        Esto es una description del proyecto
+        {children}
       </p>
       <img
         className="project-image"

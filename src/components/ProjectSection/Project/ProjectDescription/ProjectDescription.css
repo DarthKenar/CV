@@ -1,0 +1,11 @@
+.project-description{
+    padding: 1px;
+}
+.project-description-title {
+    text-align: center;
+    font-size: large;
+}
+
+.project-description-body {
+    text-align: start;
+}
