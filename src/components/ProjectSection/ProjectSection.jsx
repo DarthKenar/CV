@@ -7,8 +7,8 @@ export default function ProjectSection(){
         <Project name="VidelaSpect" image="videlaspect.jpg" link="#"/>
         <Project name="Pomodoro Neumorphism" image="pomodoroneumorphism.webp" link="https://darthkenar.github.io/PomodoroNeumorphism/"/>
         <Project name="El Canario Regionales" image="elCanarioRegionales.webp" link="http://federicovega.pythonanywhere.com/"/>
-        <Project name="Word Learn Spanish" image="wordlearnspanish.webp" link="https://github.com/DarthKenar/WordlearnSpanish"/>
         <Project name="El Canario Matemático" image="elCanarioMatematico.png" link="#"/>
+        <Project name="Word Learn Spanish" image="wordlearnspanish.webp" link="https://github.com/DarthKenar/WordlearnSpanish"/>
         <Project name="Mecalógica" image="mecalogica.jfif" link="#"/>
       </div>
       <a

@@ -1,3 +1,4 @@
+import "./Project.css"
 export default function Project({name, image, link}){
   return(
     <a
@@ -6,6 +7,9 @@ export default function Project({name, image, link}){
       className="project project-tile"
       rel="noopener noreferrer"
     >
+      <p className="project-description">
+        Esto es una description del proyecto
+      </p>
       <img
         className="project-image"
         src={require(`../../../img/projects/${image}`)}

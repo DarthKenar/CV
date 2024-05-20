@@ -1,0 +1,25 @@
+.project{
+    background-color: #303841;
+    position: relative; /* Asegúrate de que el contenedor .project tenga posición relativa */
+}
+.project-image{
+    transition: all 0.3s;
+    opacity: 1;
+    z-index: 1; /* La imagen debe estar por encima de la descripción al inicio */
+}
+.project:hover .project-image{
+    opacity: 0; 
+}
+
+.project-description{
+    position: absolute;
+    height: 100%;
+    width: 100%; /* Asegúrate de que la descripción ocupe todo el espacio del contenedor .project */
+    opacity: 0;
+    z-index: 0; /* La descripción debe estar debajo de la imagen al inicio */
+    transition: all 0.3s; /* Agrega una transición a la descripción también */
+}
+.project:hover .project-description{
+    opacity: 1;
+    z-index: 2; /* Cuando se pasa el cursor sobre el contenedor .project, la descripción debe estar por encima de la imagen */
+}
