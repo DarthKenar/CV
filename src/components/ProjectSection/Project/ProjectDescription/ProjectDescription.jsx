@@ -5,12 +5,16 @@ export default function ProjectDescription({title, goal, details, technologies, 
       <h4 className="project-description-title">{title}</h4>
         <br/>
       <p className="project-description-body">
-        {goal}<br/><br/>
-        {details}
-        <br/><br/>
-        {technologies}<br/><br/>
-        {deployment}<br/><br/>
-        {repository}
+        Objetivo: <br/>
+        <i>{goal}</i><br/><br/>
+        Características: <br/>
+        <i>{details}</i><br/><br/>
+        Tecnologías: <br/>
+        <i>{technologies}</i><br/><br/>
+        Despliegue: <br/>
+        <i><u><a className="link" href={deployment} target="_blank" rel="noreferrer noopener">{deployment}</a></u></i><br/><br/>
+        Repositorio:<br/>
+        <i><u><a className="link" href={repository} target="_blank" rel="noreferrer noopener">{repository}</a></u></i>
       </p>
     </p>
   )

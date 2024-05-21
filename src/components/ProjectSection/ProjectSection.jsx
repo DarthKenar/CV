@@ -6,13 +6,14 @@ export default function ProjectSection(){
       <h2 className="projects-section-header">Proyectos</h2>
       <div className="projects-grid">
         <Project name="VidelaSpect" image="videlaspect.jpg" link="#">
-          <ProjectDescription title="Videla Spect" goal="Registrar la entrada y salida del personal docente de la escuela Ing. Ricardo Videla n°4012." details="Al sistema se le implementó verificación de rostro humano por inteligencia artificial. Panel de administrador. Envío de resumen de registros por correo electrónico. Eliminación automática opcional de registros y mucho más." technologies="Typescript, Javascript, Node, Express.js, " deployment="asdasd" repository="asdasd"/>
+          <ProjectDescription title="Videla Spect" goal="Registrar la entrada y salida del personal docente de la escuela Ing. Ricardo Videla n°4012. Mediante Documento de Identidad y foto rostro del personal" details="Al sistema se le implementó verificación de rostro humano por inteligencia artificial. Panel de administrador. Envío de resumen de registros por correo electrónico. Eliminación automática o manual, opcional de registros, autentificación por token, encriptación de contraseñas entre otras características." technologies="Typescript, Javascript, Node.Js, Express.Js, HTMX, TypeORM, HandleBars" deployment="Ubicado en un servidor privado dentro de la escuela." repository="(privado)" />
         </Project>
         <Project name="Pomodoro Neumorphism" image="pomodoroneumorphism.webp" link="https://darthkenar.github.io/PomodoroNeumorphism/">
-          <ProjectDescription/>
+          <ProjectDescription title="Pomodoro Neumorphism" goal="Gestionar tareas sin distraerse, mantener la concentración y aumentar la productividad." details="Estilo minimalista con Neumorfismo. Guarda automaticamente las tareas para completarlas luego, establece diferentes periodos de tiempo a tu gusto para mantener la concentración." technologies="Javascript (vanilla), CSS, HTML" deployment="https://darthkenar.github.io/PomodoroNeumorphism/" repository="https://github.com/DarthKenar/PomodoroNeumorphism"/>
         </Project>
         <Project name="El Canario Regionales" image="elCanarioRegionales.webp" link="http://federicovega.pythonanywhere.com/">
-          <ProjectDescription/>
+          <ProjectDescription title="" goal="" details="" technologies="Python, Django, TailwindCSS, HTMX" deployment="https://federicovega.pythonanywhere.com/" repository=""/>
+          
         </Project>
         <Project name="El Canario Matemático" image="elCanarioMatematico.png" link="#">
           <ProjectDescription/>
