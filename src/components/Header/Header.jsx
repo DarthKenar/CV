@@ -3,13 +3,13 @@ export default function Header(){
     <nav id="navbar" className="nav">
       <ul className="nav-list">
         <li>
-          <a href="#welcome-section">Inicio</a>
+          <a className="nav-link" href="#welcome-section">Inicio</a>
         </li>
         <li>
-          <a href="#projects">Proyectos</a>
+          <a className="nav-link" href="#projects">Proyectos</a>
         </li>
         <li>
-          <a href="#contact">Contacto</a>
+          <a className="nav-link" href="#contact">Contacto</a>
         </li>
       </ul>
     </nav>

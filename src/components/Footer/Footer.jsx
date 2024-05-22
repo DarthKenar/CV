@@ -20,7 +20,7 @@ export default function Footer(){
           gap: 10
         }}
       >
-        <a href="https://f-vega.com" target="_blank" rel="noopener noreferrer">
+        <a className="link-name" href="https://www.linkedin.com/in/federico-juan-vega/" target="_blank" rel="noopener noreferrer">
           Federico Vega
         </a>
         <svg

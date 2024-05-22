@@ -95,10 +95,24 @@ h2 {
 ul {
   list-style: none;
 }
-
-a {
+.nav-link, .link-github, .link-contact, .link-name{
   text-decoration: none;
   color: var(--main-white);
+}
+.link-name{
+  font-weight: 500;
+  text-decoration: underline;
+}
+.link-name:hover{
+  color: var(--main-blue);
+}
+
+.link-name:visited{
+  color: var(--main-red);
+}
+
+.feather-github{
+  margin-right: 8px;
 }
 
 img {

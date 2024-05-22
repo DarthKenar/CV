@@ -3,7 +3,7 @@ export default function ContactLink({name, icon, link}){
     <a
       href={link}
       target="_blank"
-      className="btn contact-details"
+      className="btn contact-details link-contact"
       rel="noopener noreferrer"
     >
       <i className={icon} /> {name}

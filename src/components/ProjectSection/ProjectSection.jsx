@@ -4,16 +4,27 @@ export default function ProjectSection(){
     <section id="projects" className="projects-section">
       <h2 className="projects-section-header">Proyectos</h2>
       <div className="projects-grid">
-        <Project name="VidelaSpect" image="videlaspect.jpg" link="#"/>
-        <Project name="Pomodoro Neumorphism" image="pomodoroneumorphism.webp" link="https://darthkenar.github.io/PomodoroNeumorphism/"/>
-        <Project name="El Canario Regionales" image="elCanarioRegionales.webp" link="http://federicovega.pythonanywhere.com/"/>
-        <Project name="Word Learn Spanish" image="wordlearnspanish.webp" link="https://github.com/DarthKenar/WordlearnSpanish"/>
-        <Project name="El Canario Matemático" image="elCanarioMatematico.png" link="#"/>
-        <Project name="Mecalógica" image="mecalogica.jfif" link="#"/>
+        <Project name="VidelaSpect" image="videlaspect.jpg">
+          <h2>Descripción</h2>
+          <p>Videla Spect es un sistema de registro para docentes de la Escuela Ingeniero Ricardo Videla n°4012. Su propósito es agilizar y optimizar el proceso de registro de entrada y salida del personal. Para asegurar la precisión, se verifica el Documento de Identidad y la fotografía del rostro del personal, validada por inteligencia artificial.</p>
+          <p>Este sistema ofrece un panel de administración completo, envío de resúmenes de registros por correo electrónico y la posibilidad de eliminar registros de manera automática o manual. Permite activar o desactivar la validación por IA y ajustar su sensibilidad, evitando así inconvenientes con cámaras de baja resolución. Para proteger los datos, se utiliza autenticación por token y encriptación de contraseñas.</p>
+          <p>Videla Spect se desarrolló con tecnologías robustas y modernas como Typescript, Javascript, Node.Js, Express.Js, HTMX, TypeORM y HandleBars, garantizando un rendimiento óptimo y una experiencia de usuario fluida.</p>
+          <h2>Despliegue</h2>
+          <p>Videla Spect está alojado en un servidor privado ubicado dentro de las instalaciones de la escuela.</p>
+          <h2>Repositorio</h2>
+          <p>El repositorio de código de Videla Spect es privado.</p>
+          <h2>Explicación en YouTube</h2>
+          <p><a rel="noopener noreferrer" target="_blank" className="project-link" href="https://www.youtube.com/watch?v=1TA07KAbR10">https://www.youtube.com/watch?v=1TA07KAbR10</a></p>
+        </Project>
+        <Project name="Pomodoro Neumorphism" image="pomodoroneumorphism.webp" link="https://darthkenar.github.io/PomodoroNeumorphism/"></Project>
+        <Project name="El Canario Regionales" image="elCanarioRegionales.webp" link="http://federicovega.pythonanywhere.com/"></Project>
+        <Project name="Word Learn Spanish" image="wordlearnspanish.webp" link="https://github.com/DarthKenar/WordlearnSpanish"></Project>
+        <Project name="El Canario Matemático" image="elCanarioMatematico.png" link="#"></Project>
+        <Project name="Mecalógica" image="mecalogica.jfif" link="#"></Project>
       </div>
       <a
         href="https://github.com/DarthKenar?tab=repositories"
-        className="btn btn-show-all"
+        className="btn btn-show-all link-github"
         target="_blank"
         rel="noopener noreferrer"
       >
