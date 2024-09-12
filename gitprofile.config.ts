@@ -107,7 +107,7 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
+      company: 'Kairox Lab',
       position: 'Software Developer',
       from: 'June 2024',
       to: 'Present',
